@@ -1,0 +1,10 @@
+// 多移动设备适配混入
+.device-mx(@devices, @rem-percent, @index: 1) when(@index <= length(@devices)) {
+    @media (min-width: extract(@devices, @index)) {
+        html {
+            font-size: extract(@devices, @index) * @rem-percent;
+        }
+    };
+
+    .device-mx(@devices, @rem-percent, @index + 1);
+};

@@ -1,0 +1,7 @@
+// 元素固定定位混入
+.anchor-mx(@prop1: left, @prop2: top, @prop1-val: 0, @prop2-val: 0, @zindex: auto) {
+    position: fixed;
+    @{prop1}: @prop1-val;
+    @{prop2}: @prop2-val;
+    z-index: @zindex;
+};
