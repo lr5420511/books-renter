@@ -1,0 +1,29 @@
+{
+  "name": "books-renter-server",
+  "version": "1.0.0",
+  "description": "图书借阅系统服务器端应用",
+  "main": "index.js",
+  "scripts": {
+    "test": "set NODE_ENV=development&node ./index",
+    "go": "set NODE_ENV=production&node ./index"
+  },
+  "keywords": [
+    "books",
+    "renter",
+    "server",
+    "koa",
+    "mongoose"
+  ],
+  "author": "Alex liao",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "async-series-each": "^1.0.2",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-router": "^9.0.1",
+    "koa-static": "^5.0.0",
+    "mongoose": "^5.9.20",
+    "new-promiseify": "^1.1.1"
+  }
+}
